@@ -14,7 +14,6 @@ beforeEach(async () => {
 	// Get a list of all accounts
 	accounts = await web3.eth.getAccounts();
 
-	
 	// Use one of those accoutns to deploy contract
 	inbox = await new web3.eth.Contract(JSON.parse(interface))
 		.deploy({ 
